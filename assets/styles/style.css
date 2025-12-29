@@ -1,0 +1,194 @@
+/* 🌍 RESET ET STYLES DE BASE */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+/* 🌐 LIENS */
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+/* 🧭 HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 0.8rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* Menu principal */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+nav ul li a:hover {
+  color: #ffd700;
+}
+/* 🧩 MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  display: grid;
+  height: 1vh;
+}
+/* 🧍‍♂️ SECTION HIRO */
+#hiro {
+  padding: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* 📄 SECTION CV */
+#mycv {
+  text-align: center;
+  padding: 20vh;
+}
+#mycv ul {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#mycv li {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 30px;
+  text-align: left;
+}
+#myproject {
+  text-align: center;
+  padding: 20vh;
+}
+/* 💼 SECTION PROJECTS */
+#project-card-contenair {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  width: 280px;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/* 👤 SECTION ABOUT */
+#about_me {
+  text-align: center;
+  height: 75vh;
+  padding: 20vh;
+}
+/* ⚫ FOOTER */
+footer {
+  background-color: rgba(0, 0, 0, 0.986);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* 📱 RESPONSIVE DESIGN */
+
+/* --- Petits écrans (mobiles) --- */
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 0.5rem;
+  }
+
+  .logo h1 {
+    font-size: 1rem;
+  }
+
+  #hiro h2 {
+    font-size: 1.5rem;
+  }
+
+  #hiro p {
+    font-size: 1rem;
+  }
+
+  #mycv li {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* --- Très petits écrans (moins de 400px) --- */
+@media (max-width: 390px) and (min-width: 360px) {
+  /* 🧭 HEADER */
+  header {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    align-items: center;
+  }
+
+  /* 🧩 MAIN */
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  #hiro {
+    padding: 20vh 5vh;
+  }
+  #mycv {
+    padding: 20vh 5vh;
+  }
+  #myproject {
+    padding: 20vh 5vh;
+  }
+  #about_me {
+    padding: 20vh 5vh;
+  }   
+}
